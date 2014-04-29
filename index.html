@@ -2,18 +2,24 @@
   <head>
     <title>Is it Aaron's birthday?</title>
     <style>
-      html, body, .yes {
+      html, body, #yes {
         height: 100%;
         width: 100%;
       }
 
-      .yes {
+      #yes {
         display: table;
         font-size: 300px;
         text-align: center;
+        background: url(balloon.png) no-repeat center -100%;
+        transition: background-position 90s linear;
       }
 
-      .yes strong {
+      #yes.float {
+        background-position: center 100%;
+      }
+
+      #yes strong {
         display: table-cell;
         vertical-align: middle;
       }
@@ -21,8 +27,13 @@
   </head>
 
   <body>
-    <div class="yes">
+    <div id="yes">
       <strong>YES</strong>
     </div>
+    <script>
+      setTimeout(function() {
+        document.getElementById("yes").className = "float";
+      }, 0);
+    </script>
   </body>
 </html>
