@@ -2,36 +2,24 @@
   <head>
     <title>Is it Aaron's birthday?</title>
     <style>
-      html, body, #yes {
+      html, body, #wrapper {
         height: 100%;
         width: 100%;
+        background: black;
       }
 
       body {
         margin: 0;
         padding: 0;
       }
-      html {
-        background: url(Bea.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
 
-      #yes {
+      #wrapper {
         display: table;
         font-size: 300px;
         text-align: center;
-        background: url(balloon.png) no-repeat center -100%;
-        transition: background-position 90s linear;
       }
 
-      #yes.float {
-        background-position: center 100%;
-      }
-
-      #yes strong {
+      #wrapper strong {
         display: table-cell;
         vertical-align: middle;
       }
@@ -39,14 +27,8 @@
   </head>
 
   <body>
-    <div id="yes">
-      <strong>That's like asking if Bea Arthur is hot. Of course it is!</strong>
-      <img src="http://25.media.tumblr.com/tumblr_m3rtyerfHZ1qir45xo1_500.gif"></img>
+    <div id="wrapper">
+      <strong><img src="no-no-no.gif" /></strong>
     </div>
-    <script>
-      setTimeout(function() {
-        document.getElementById("yes").className = "float";
-      }, 0);
-    </script>
   </body>
 </html>
