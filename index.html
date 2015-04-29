@@ -1,51 +1,47 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Is it Aaron's birthday?</title>
     <style>
-      html, body, #yes {
+      html, body, #wrapper {
         height: 100%;
         width: 100%;
       }
 
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        background: url(Bea.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-      #yes {
-        display: table;
-        font-size: 300px;
+      #wrapper {
         text-align: center;
-        background: url(balloon.png) no-repeat center -100%;
-        transition: background-position 90s linear;
       }
 
-      #yes.float {
-        background-position: center 100%;
+      section {
+        margin: 100px 0;
+        white-space: nowrap;
       }
 
-      #yes strong {
-        display: table-cell;
+      .aaron-40 {
+        height: 200px;
+        line-height: 200px;
+        font-size: 100px;
+      }
+
+      .aaron-40 img {
+        height: 75%;
         vertical-align: middle;
       }
     </style>
   </head>
 
   <body>
-    <div id="yes">
-      <strong>That's like asking if Bea Arthur is hot. Of course it is!</strong>
+    <div id="wrapper">
+      <section><img src="yep.gif" /></section>
+      <section class="aaron-40">
+        <img class="aaron" src="aaron.jpg" />
+        <span>= 40</span>
+      </section>
+      <section><img src="celebrate.gif" /></section>
+      <section><img src="goodies.jpg" /></section>
     </div>
-    <script>
-      setTimeout(function() {
-        document.getElementById("yes").className = "float";
-      }, 0);
-    </script>
+
+    <a href="https://github.com/adamlogic/isitaaronsbirthday.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
   </body>
 </html>
