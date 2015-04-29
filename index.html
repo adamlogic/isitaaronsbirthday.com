@@ -1,26 +1,31 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Is it Aaron's birthday?</title>
     <style>
       html, body, #wrapper {
         height: 100%;
         width: 100%;
-        background: black;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
       }
 
       #wrapper {
-        display: table;
-        font-size: 300px;
         text-align: center;
       }
 
-      #wrapper strong {
-        display: table-cell;
+      section {
+        margin: 100px 0;
+        white-space: nowrap;
+      }
+
+      .aaron-40 {
+        height: 200px;
+        line-height: 200px;
+        font-size: 100px;
+      }
+
+      .aaron-40 img {
+        height: 75%;
         vertical-align: middle;
       }
     </style>
@@ -28,7 +33,12 @@
 
   <body>
     <div id="wrapper">
-      <strong><img src="no-no-no.gif" /></strong>
+      <section><img src="yep.gif" /></section>
+      <section class="aaron-40">
+        <img class="aaron" src="aaron.jpg" />
+        <span>= 40</span>
+      </section>
+      <section><img src="celebrate.gif" /></section>
     </div>
   </body>
 </html>
